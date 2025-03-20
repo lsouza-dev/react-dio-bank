@@ -1,3 +1,3 @@
-export const login = ():void =>{
-  alert('Bem vindo!')
+export const login = (email:string,senha:string) =>{
+  alert(`Bem vindo, ${email}!`)
 }

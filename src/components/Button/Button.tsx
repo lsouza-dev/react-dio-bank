@@ -1,9 +1,9 @@
-import React from "react";
+import { MouseEventHandler } from "react";
 import { Button as ChakraButton } from "@chakra-ui/react";
 
 interface IButton{
   text:string;
-  onClick:() => void;
+  onClick:() => MouseEventHandler<HTMLButtonElement> | void;
 }
 
 const Button = ({text,onClick}:IButton) => {
